@@ -1,1 +1,1 @@
-# food-truck-tracker-server
+# stellarvore-server
