@@ -21,6 +21,7 @@ class User extends BaseUser
      * @ORM\Id
      * @ORM\Column(type="integer")
      * @ORM\GeneratedValue(strategy="AUTO")
+     * @Groups({"user"})
      */
     protected $id;
 
@@ -44,6 +45,16 @@ class User extends BaseUser
      * @Groups({"user"})
      */
     protected $username;
+
+    /**
+     * @Groups({"user"})
+     */
+    protected $roles;
+
+    /**
+     * @Groups({"user"})
+     */
+    protected $enabled;
 
     public function setFullname($fullname)
     {
