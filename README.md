@@ -1,5 +1,3 @@
-# stellarvore-server
-
 Installation
 ============
 
