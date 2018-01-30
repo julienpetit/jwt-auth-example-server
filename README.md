@@ -19,6 +19,17 @@ $ openssl genrsa -out config/jwt/private.pem -aes256 4096
 $ openssl rsa -pubout -in config/jwt/private.pem -out config/jwt/public.pem
 ```
 
+Add your database credentials in .env file
+
+```shell
+DATABASE_URL=mysql://db_user:db_password@127.0.0.1:3306/db_name
+```
+
+Then create database schema :
+```shell
+php bin/console doctrine:schema:update --force
+```
+
 Then start the development server :
 
 ``` bash
@@ -38,3 +49,4 @@ Add your JWT passphrase to .env file
 ``` bash
 JWT_PASSPHRASE=your_passphrase
 ```
+
