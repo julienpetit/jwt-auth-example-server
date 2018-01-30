@@ -43,4 +43,5 @@ security:
         - { path: ^/login, role: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/api/token/refresh, roles: IS_AUTHENTICATED_ANONYMOUSLY }
         - { path: ^/api$, roles: IS_AUTHENTICATED_ANONYMOUSLY }
+        - { path: ^/api/users$, roles: IS_AUTHENTICATED_ANONYMOUSLY, methods: [POST]}
         - { path: ^/, roles: IS_AUTHENTICATED_FULLY }
